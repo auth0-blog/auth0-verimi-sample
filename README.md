@@ -235,8 +235,6 @@ followed by
 
 This should spin up a local Node.js web server, making the application available at `http://localhost:3000`.
 
-![Placeholder](img/node.png)
-
 6.
 
 Returning to the Auth0 dashboard, click the `Settings` tab of the app.
