@@ -31,6 +31,7 @@ Auth0 is Identity made simple and secure. With Auth0, you take perhaps the riski
 ### Prerequisites
 
 We assume that you already have registered an Auth0 account and setup a tenant. If not, register a free account and tenant at https://auth0.com
+Also, we assume that you already have a client app setup in Auth0. If not, you can refer to the steps and screenshots [further below](#auth0-backend).
 
 Furthermore, we assume that you have already registered a service provider account at Verimi. If not, you can inform yourself about the possibilities here: https://verimi.de/en/partner and contact Verimi by email, referring to Auth0: partner@verimi.com.  
 
@@ -198,9 +199,63 @@ After consent is given, the browser redirects to the application, having receive
 
 ![Placeholder](img/Screen_Shot_2019-04-02_at_10.37.00_AM.png)
 
-### Auth0 Backend
+## Auth0 Backend
 
-In the Auth0 backend, the client application is registered as follows:
+### Client App Creation in Auth0
+
+In our example, we chose a `Single Page Application (SPA)` based on `Angular` delivered from a Node.js web server. You can choose any other technology stack as well though.
+
+In our case, the client application is created and configured as follows in the Auth0 backend:
+
+1. Create the application by going to the `Applications` section in the dashboard and click the `+ Create Application` button.
+
+![Placeholder](img/applications-create.png)
+
+2. Give the application any name you like and choose `Single Page Web Application` as the type.
+
+![Placeholder](img/app-quickstart-1.png)
+
+3. Next, choose `Angular` as the technology.
+
+![Placeholder](img/app-quickstart-2.png)
+
+4. Afterwards, you're given the choice to either integrate Auth0 into an existing app, or download a complete sample. Choose the latter and download the `.zip` file.
+
+![Placeholder](img/app-quickstart-3.png)
+
+5. Download and unzip the `.zip` file anywhere on your computer. Then, enter a local terminal window and switch to the folder where you extracted the project into.
+
+To build and run the project, enter:
+
+`npm install`
+
+followed by
+
+`npm start`
+
+This should spin up a local Node.js web server, making the application available at `http://localhost:3000`.
+
+![Placeholder](img/node.png)
+
+6.
+
+Returning to the Auth0 dashboard, click the `Settings` tab of the app.
+
+In the application settings:
+
+* set `Application Type` to `Single Page Application`.
+* set `Allowed Callback URLs` to `http://localhost:3000/callback`
+* set `Allowed Logout URLs` to `http://localhost:3000`
+
+![Placeholder](img/app-settings.png)
+
+7.
+
+As for the connections, enable any (other) connections that you want enabled besides `Verimi`. Note that custom social connection don't show in this screen, they are configured and within the `Custom Social Connection` extension itself. In our example, we chose to also offer authentication via `Username-Password-Authentication`, `facebook` and `google-oauth2`, besides `Verimi`, thus the respective switches are enabled.
+
+![Placeholder](img/app-connections.png)
+
+In the end, the application is listed in the `Applications` overview:
 
 ![Placeholder](img/Screen_Shot_2019-04-02_at_10.20.09_AM.png)
 
@@ -219,7 +274,7 @@ The user's primary identity provider is shown as `oauth2`...
 ![Placeholder](img/Screen_Shot_2019-04-02_at_10.22.01_AM.png)
 
 
-### Verimi Backend
+## Verimi Backend
 
 After logging into the Verimi backend as a user, you see the dashboard...
 
