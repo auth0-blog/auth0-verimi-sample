@@ -6,7 +6,7 @@
 
 ### Purpose
 
-The purpose of this sample project is to demonstrate how a web developer, using **Auth0**, can add the identity provider **Verimi** as an option for their end users to signup and login to his/her web application.
+The purpose of this sample project is to demonstrate how a web developer, using **Auth0**, can add the identity provider **Verimi** as an option for their end users to signup and login to their web application.
 
 ### About Verimi
 
