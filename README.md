@@ -13,7 +13,7 @@ The purpose of this sample project is to demonstrate how a web developer, using 
 **Verimi is your secure ID provider**
 
 Verimi is the trusted cross-sector european identity platform making processing digital user data easy, while identifing and verifing your users quickly and seamlessly. Verimi helps you meet your sector’s regulatory requirements in accordance with the Money Laundry Act (ZAG license by BaFin), being compliant to KYC standards as well as to European standards (GDPR, elDAS), being ISO/IEC 27001-certified and complying to the requirements of the Federal Network Agency.
-Verimi offers the following services: simple registration process, in-line verification, secure login, 2-FA, qualified digital signature and payment.
+Verimi offers the following services: simple registration process, in-line verification, secure login, 2-FA, qualified digital signature and soon payment.
 Verimi is backed by strong partners like Samsung, Deutsche Telekom, Allianz, Axel Springer, Daimler, Deutsche Bank..
 
 * https://verimi.de/en/
