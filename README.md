@@ -159,7 +159,7 @@ After:
 
 ### Screencast
 
-A screencast of the authentication flow is available here: [1080.mov](mov/1080.mov)
+A screencast of the authentication flow is available here: [Screencast](https://youtu.be/qh3L-BQTQBU)
 
 ### Authentication
 
