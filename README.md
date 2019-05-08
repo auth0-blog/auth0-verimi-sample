@@ -38,7 +38,7 @@ Furthermore, we assume that you have already registered a service provider accou
 ### Configuration on Verimi side
 
 1. Verimi will send you a welcome email requesting contact data (for sending the api access data), your redirect urls (in order to  whitelist them) and you company logo (for co-branded flow)
-2. Verimi provides you with an api access to the UAT test environment by email and sms (base URL: https://verimi-uat-web.coretransform.com)
+2. Verimi provides you with an api access to the UAT test environment by email and sms (base URL: https://verimi-uat.coretransform.com)
 3. You test your integration and do a short acceptance test with Verimis integration team
 4. You provide content if you want to be listed as a service provider in the customer login area
 5. Verimi will provide you with api access for the live environment (base url: https://web.verimi.de)
